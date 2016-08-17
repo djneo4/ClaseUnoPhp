@@ -20,7 +20,7 @@
 						$tres=0;
 						$cuatro=0;
 						$cinco=0;
-						$seis=0;
+						$seis =0;
 						$siete=0;
 						$ocho=0;
 						$nueve=0;
@@ -76,9 +76,19 @@
 
 						}
 
+						$uno = ($uno/$vueltas)*10;
+						$dos = ($dos/$vueltas)*10;
+						$tres = ($tres/$vueltas)*10;
+						$cuatro = ($cuatro/$vueltas)*10;
+						$cinco = ($cinco/$vueltas)*10;
+						$seis = ($seis/$vueltas)*10;
+						$siete = ($siete/$vueltas)*10;
+						$ocho = ($ocho/$vueltas)*10;
+						$nueve = ($nueve/$vueltas)*10;
+						$diez = ($diez/$vueltas)*10;
 
 							echo "Hay $pares pares y $impares impares<br><br>";
-							echo "Uno salio : $uno <br> Dos salio $dos <br> tres salio $tres<br> Cuatro salio $cuatro<br> Cinco salio $cinco<br> Seis salio $seis<br> siete salio $siete<br> ocho salio $ocho <br>nueve salio $nueve <br>diez salio $diez";
+							echo "Uno salio : $uno %<br> Dos salio $dos %<br> tres salio $tres %<br> Cuatro salio $cuatro %<br> Cinco salio $cinco %<br> Seis salio $seis %<br> siete salio $siete %<br> ocho salio $ocho %<br>nueve salio $nueve %<br>diez salio $diez %" ;
 			?>
 
 
