@@ -11,13 +11,23 @@
 			<h1>Hola mundo</h1>
 
 			<?php 
-						$numero = 10;
+						$vueltas = 10;
+						$pares=0;
+						$impares=0;
 
-						echo "El numero es: $numero";
+						for ($i=0;$i<$vueltas;$i++) { 
+							
+							$numero = rand(0,10);
+							if ($numero%2 == 0) {
+								$pares +=1;
+							}
 
-						echo "<h2>Hola mundo</h2>";
+							else
+								$impares+=1;
+						}
 
-						echo "El cambio ";
+
+							echo "Hay $pares pares y $impares impares";
 
 			?>
 
