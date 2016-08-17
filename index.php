@@ -11,7 +11,7 @@
 			<h1>Hola mundo</h1>
 
 			<?php 
-						$vueltas=10;
+						$vueltas=100;
 						$pares=0;
 						$impares=0;
 
@@ -56,7 +56,12 @@
 								case 6:$seis +=1;
 									# code...
 									break;
-								case 7:$siete +=1;
+								case 7:
+									$p=($siete/$vueltas)*100; 
+										if($p >= 5)
+											continue;
+										else
+											$siete +=1;
 									# code...
 									break;
 								case 8:$ocho +=1;
@@ -72,20 +77,22 @@
 								default:
 									# code...
 									break;
+
+
 							}
 
 						}
 
-						$uno = ($uno/$vueltas)*10;
-						$dos = ($dos/$vueltas)*10;
-						$tres = ($tres/$vueltas)*10;
-						$cuatro = ($cuatro/$vueltas)*10;
-						$cinco = ($cinco/$vueltas)*10;
-						$seis = ($seis/$vueltas)*10;
-						$siete = ($siete/$vueltas)*10;
-						$ocho = ($ocho/$vueltas)*10;
-						$nueve = ($nueve/$vueltas)*10;
-						$diez = ($diez/$vueltas)*10;
+						$uno = ($uno/$vueltas)*100;
+						$dos = ($dos/$vueltas)*100;
+						$tres = ($tres/$vueltas)*100;
+						$cuatro = ($cuatro/$vueltas)*100;
+						$cinco = ($cinco/$vueltas)*100;
+						$seis = ($seis/$vueltas)*100;
+						$siete = ($siete/$vueltas)*100;
+						$ocho = ($ocho/$vueltas)*100;
+						$nueve = ($nueve/$vueltas)*100;
+						$diez = ($diez/$vueltas)*100;
 
 							echo "Hay $pares pares y $impares impares<br><br>";
 							echo "Uno salio : $uno %<br> Dos salio $dos %<br> tres salio $tres %<br> Cuatro salio $cuatro %<br> Cinco salio $cinco %<br> Seis salio $seis %<br> siete salio $siete %<br> ocho salio $ocho %<br>nueve salio $nueve %<br>diez salio $diez %" ;
